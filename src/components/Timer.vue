@@ -1,6 +1,6 @@
 <script setup>
 import Counter from "./Counter.vue"
-import {ref, watchEffect} from "vue";
+import { ref, watchEffect } from "vue";
 
 const startCountOfSeconds = 140;
 
