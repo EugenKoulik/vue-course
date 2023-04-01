@@ -1,5 +1,5 @@
 <script setup>
-import CardList from "./components/CardList.vue";
+import CardList from "./components/CardList/CardList.vue";
 import css from "./App.module.css";
 import { reactive, ref, computed } from "vue";
 
@@ -9,20 +9,23 @@ const cards = reactive([
   {
     id: 1,
     name: "Anton",
-    description: "QA",
-    count: 1200
+    grade: "Senior",
+    salary: 3200,
+    currency: "USD"
   },
   {
     id: 2,
     name: "Bogdan",
-    description: "Middle",
-    count: 1800
+    grade: "Middle",
+    salary: 1800,
+    currency: "USD"
   },
   {
     id: 3,
     name: "Denis",
-    description: "Junior",
-    count: 800
+    grade: "Junior",
+    salary: 800,
+    currency: "USD"
   }
 ]);
 
