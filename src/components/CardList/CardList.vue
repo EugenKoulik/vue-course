@@ -6,6 +6,9 @@ import { ref, reactive, onMounted, onUnmounted } from "vue";
 defineProps({
   cards: {
     type: Array
+  },
+  filterString: {
+    type: String
   }
 });
 
@@ -53,11 +56,11 @@ onUnmounted(() => {
   <div :class="css.cardList">
     <div v-for="card in cards" :key="card.id">
       <Card
+          v-if="card.name.includes(filterString)"
           :name="card.name"
-          :grade="card.grade"
-      >
+          :grade="card.grade">
         <template #currency>
-          <h5>{{Math.round(card.salary * currencies[currentId].coefficient)}} {{currencies[currentId].name}}</h5>
+          <h5>{{ Math.round(card.salary * currencies[currentId].coefficient) }} {{ currencies[currentId].name }}</h5>
         </template>
       </Card>
     </div>
