@@ -1,0 +1,6 @@
+.card {
+    width: auto;
+    display: block;
+    border: 1px dashed black;
+    margin-top: 5px;
+}

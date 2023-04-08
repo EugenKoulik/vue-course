@@ -4,13 +4,3 @@
     margin-top: 15px;
     width: 30em;
 }
-.card {
-    width: auto;
-    display: block;
-    border: 1px dashed black;
-    margin-top: 5px;
-}
-.card-list {
-    width: auto;
-    margin-top: 10px;
-}
