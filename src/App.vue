@@ -4,7 +4,6 @@ import css from "./App.module.css";
 import { reactive, ref } from "vue";
 
 const input = ref("");
-
 const cards = reactive([
   {
     id: 1,
@@ -28,7 +27,6 @@ const cards = reactive([
     currency: "USD"
   }
 ]);
-
 </script>
 
 <template>
