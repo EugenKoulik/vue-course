@@ -1,0 +1,22 @@
+.snack_bar {
+    position: static;
+    left: 20px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: hsla(218, 47%, 70%, 0.38);
+    font-weight: 600;
+    z-index: 3;
+}
+
+.snack_bar__times {
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}

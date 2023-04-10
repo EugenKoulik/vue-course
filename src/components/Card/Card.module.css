@@ -3,4 +3,11 @@
     display: block;
     border: 1px dashed black;
     margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.button {
+    margin-top: 10px;
 }
